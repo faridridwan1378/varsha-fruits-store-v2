@@ -201,15 +201,13 @@
                 const overlay = document.getElementById('auth-overlay');
                 overlay.style.display = 'none';
 
-                // Enable admin features only on localhost (development)
-                const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-
-                if(isLocalhost && String(user.phone).trim() === SC) {
+                // Enable admin features for admin users
+                if(String(user.phone).trim() === SC) {
                     document.getElementById('super-admin-menu').style.display = 'flex';
                     document.getElementById('settings-btn').style.display = 'inline-block';
                 }
-                // Show rekening button only for user with WhatsApp 2990707 on localhost
-                if(isLocalhost && String(user.phone).trim() === "2990707") {
+                // Show rekening button for user with WhatsApp 2990707
+                if(String(user.phone).trim() === "2990707") {
                     document.getElementById('rekening-btn').style.display = 'inline-block';
                 }
                 render();
