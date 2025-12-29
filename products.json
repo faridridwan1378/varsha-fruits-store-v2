@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Apel Fuji",
+    "price": 45000,
+    "unit": "Kg",
+    "img": "https://images.unsplash.com/photo-1560806887-1e4cd0b6bcd6?w=500"
+  },
+  {
+    "id": 2,
+    "name": "Jeruk Mandarin",
+    "price": 35000,
+    "unit": "Kg",
+    "img": "https://images.unsplash.com/photo-1547514701-42782101795e?w=500"
+  },
+  {
+    "id": 3,
+    "name": "Pisang Cavendish",
+    "price": 25000,
+    "unit": "Kg",
+    "img": "https://images.unsplash.com/photo-1571771019784-3ff35f4f4277?w=500"
+  },
+  {
+    "id": 4,
+    "name": "Mangga Harum Manis",
+    "price": 30000,
+    "unit": "Kg",
+    "img": "https://images.unsplash.com/photo-1553279768-865429fa0078?w=500"
+  },
+  {
+    "id": 5,
+    "name": "Anggur Merah",
+    "price": 75000,
+    "unit": "Kg",
+    "img": "https://images.unsplash.com/photo-1537640538966-79f36943f303?w=500"
+  },
+  {
+    "id": 6,
+    "name": "Stroberi Premium",
+    "price": 85000,
+    "unit": "Pack",
+    "img": "https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?w=500"
+  },
+  {
+    "id": 7,
+    "name": "Kiwi Hijau",
+    "price": 55000,
+    "unit": "Kg",
+    "img": "https://images.unsplash.com/photo-1610917040803-1fccf8728a4c?w=500"
+  },
+  {
+    "id": 8,
+    "name": "Nanas Madu",
+    "price": 20000,
+    "unit": "Pcs",
+    "img": "https://images.unsplash.com/photo-1550258987-190a2d41a8ba?w=500"
+  }
+]
