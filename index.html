@@ -183,16 +183,17 @@
         let imgS = "";
 
         window.onload = async () => {
-            // Load products from JSON file if db is empty
-            if(db.length === 0) {
-                try {
-                    const response = await fetch('products.json');
-                    const products = await response.json();
-                    db = products;
-                    localStorage.setItem('v_db', JSON.stringify(db));
-                } catch (error) {
-                    console.error('Error loading products:', error);
-                    // Fallback to default product
+            // Always try to load from products.json first for deployed version
+            try {
+                const response = await fetch('products.json');
+                const products = await response.json();
+                db = products;
+                // Save to localStorage for offline use
+                localStorage.setItem('v_db', JSON.stringify(db));
+            } catch (error) {
+                console.error('Error loading products from JSON:', error);
+                // Fallback to localStorage if JSON fails
+                if(db.length === 0) {
                     db = [{ id: 1, name: "Apel Fuji", price: 45000, unit: "Kg", img: "https://images.unsplash.com/photo-1560806887-1e4cd0b6bcd6?w=500" }];
                 }
             }
